@@ -7,7 +7,7 @@ html {
 /* VARIABLES */
 /* SHARED CLASSES*/
 
-#disclaimer{
+p#disclaimer{
   display: block;
   margin: auto;
   width: 65%;
