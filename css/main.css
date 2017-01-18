@@ -2031,7 +2031,7 @@ table {
     #page17 section img {
       position: absolute;
       width: 15rem;
-      z-index: -10;
+      z-index: 100;
       display: none; }
       @media screen and (max-width: 660px) {
         #page17 section img {
