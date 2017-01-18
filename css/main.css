@@ -2010,12 +2010,14 @@ table {
       #page17 section {
         padding: 3rem 0; } }
     #page17 section p {
+      position: relative;
       text-align: justify;
       font-size: 1rem;
       -webkit-columns: 2;
       -moz-columns: 2;
       -o-columns: 2;
-      columns: 2; }
+      columns: 2;
+      z-index: 100; }
       @media screen and (max-width: 970px) {
         #page17 section p {
           font-size: 1.4rem; } }
@@ -2031,7 +2033,7 @@ table {
     #page17 section img {
       position: absolute;
       width: 15rem;
-      z-index: 100;
+      z-index: 10;
       display: none; }
       @media screen and (max-width: 660px) {
         #page17 section img {
