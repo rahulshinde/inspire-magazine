@@ -204,21 +204,18 @@ table {
       padding-top: 10em;
       margin-left: 10%;
       width: 80%;
-      text-align: justify;
-      -moz-text-align-last: justify;
-      /* Code for Firefox */
-      text-align-last: justify;
+      text-align: left;
       -webkit-columns: 4;
       -moz-columns: 4;
       -o-columns: 4;
       columns: 4;
-      -webkit-column-gap: 8rem;
-      -moz-column-gap: 8rem;
-      -o-column-gap: 8rem;
-      column-gap: 8rem; }
+      -webkit-column-gap: 2rem;
+      -moz-column-gap: 2rem;
+      -o-column-gap: 2rem;
+      column-gap: 2rem; }
     #home #toc li {
       font-family: 'Proza Libre', sans-serif;
-      font-size: 1.2rem;
+      font-size: 1rem;
       line-height: 1.3em;
       margin-bottom: 1rem; }
       #home #toc li:hover {
@@ -318,13 +315,22 @@ table {
       top: 50%;
       left: 1rem;
       width: 15rem;
+      padding: 0.5rem 1rem 1rem 1rem;
       border: 1px solid black;
       border-radius: 10px;
       -webkit-border-radius: 10px;
       background-color: rgba(255, 0, 0, 0.5);
       color: white;
       font-family: 'Aref Ruqaa', serif;
-      font-size: 2rem; }
+      font-size: 1.5rem;
+      line-height: 1.2em; }
+      #home #nav #current a:link,
+      #home #nav #current a:visited {
+        color: white;
+        font-weight: bold;
+        text-decoration: underline; }
+      #home #nav #current a:hover {
+        text-decoration: none; }
       #home #nav #current.off {
         opacity: 0; }
         #home #nav #current.off:hover {
@@ -343,9 +349,11 @@ table {
       background: white;
       border: 1px solid black;
       border-radius: 10px;
-      -webkit-border-radius: 10px; }
+      -webkit-border-radius: 10px;
+      transition: font-size ease 0.5s; }
       #home #nav #nav_control.off {
-        opacity: 0.5; }
+        opacity: 0.5;
+        font-size: 1rem; }
         #home #nav #nav_control.off:hover {
           cursor: default; }
         #home #nav #nav_control.off:hover {

@@ -69,8 +69,10 @@ Site.tocNav = function() {
   $('#current_info1').append($(this).data('name'));
   $('#current_info2').empty();
   $('#current_info2').append($(this).data('issue'));
+  $('#pageNumber').empty();
+  $('#pageNumber').append($(this).data('page'));
   $('#current_info3').empty();
-  $('#current_info3').append($(this).data('link'));
+  $('#current_info3').append('<a target="_blank" href='+"'"+$(this).data('link')+"'"+'>Link</a>');
 
   $('#content_container').load(page + '.html', function(){
     $('#toc').fadeToggle(500);
