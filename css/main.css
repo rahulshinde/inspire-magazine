@@ -450,7 +450,7 @@ table {
       @media screen and (max-width: 768px) {
         #home #nav #nav_control {
           font-size: 2.5rem; } }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 500px) {
         #home #nav #nav_control {
           top: inherit;
           bottom: 10rem;
