@@ -203,6 +203,7 @@ table {
     display: none;
     position: fixed;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     top: 0;
     bottom: 0;
     width: 100%;
