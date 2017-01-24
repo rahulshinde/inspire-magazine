@@ -3,7 +3,7 @@
 ##[Vijay Masharani](http://vijaymasharani.com/) + [Rahul Subash Shinde](http://rahulshinde.com/)
 ##[Expressions of Doubt](http://or-maybe.info)
 
-####*This website has been designed and published for entertainment/academic purposes only and does not endorse any of the content that it contains. All content has been sourced from existing material and can be found through references provided on each page.*
+####*This website has been designed and published for entertainment/academic purposes only and does not endorse any of the content that it contains. All content has been sourced from existing material and can be found through references provided within the site itself.*
 
 ####This project consisted of excavating, reassembling, rebranding, and then re-presenting the written content of three issues of Al-Qaeda’s propagandic publication Inspire Magazine in a responsive website. Our rebrand of Inspire Magazine was the culmination of a number of theoretical points of entry which we will briefly survey here.
 
