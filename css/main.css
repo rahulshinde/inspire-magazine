@@ -124,6 +124,11 @@ table {
   font-weight: normal;
   font-style: normal; }
 #cover {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  overflow-y: scroll;
   background-color: black;
   padding-bottom: 4rem; }
   #cover h1 {
@@ -191,9 +196,13 @@ table {
 
 #home {
   background-color: black; }
+  #home.fixed {
+    position: fixed;
+    overflow: hidden; }
   #home #toc {
     display: none;
     position: fixed;
+    overflow-y: scroll;
     top: 0;
     bottom: 0;
     width: 100%;
@@ -202,6 +211,7 @@ table {
     z-index: 10000; }
     #home #toc ul {
       padding-top: 10em;
+      padding-bottom: 4em;
       margin-left: 10%;
       width: 80%;
       text-align: left;
@@ -213,11 +223,42 @@ table {
       -moz-column-gap: 2rem;
       -o-column-gap: 2rem;
       column-gap: 2rem; }
+      @media screen and (max-width: 768px) {
+        #home #toc ul {
+          text-align: center;
+          padding-top: 13rem;
+          -webkit-columns: 2;
+          -moz-columns: 2;
+          -o-columns: 2;
+          columns: 2;
+          -webkit-column-gap: 4rem;
+          -moz-column-gap: 4rem;
+          -o-column-gap: 4rem;
+          column-gap: 4rem; } }
+      @media screen and (max-width: 500px) {
+        #home #toc ul {
+          padding-top: 16rem;
+          -webkit-columns: 1;
+          -moz-columns: 1;
+          -o-columns: 1;
+          columns: 1; } }
     #home #toc li {
       font-family: 'Proza Libre', sans-serif;
       font-size: 1rem;
       line-height: 1.3em;
       margin-bottom: 1rem; }
+      @media screen and (max-width: 768px) {
+        #home #toc li {
+          font-size: 2rem;
+          line-height: 1.3em;
+          margin-bottom: 2rem; } }
+      @media screen and (max-width: 768px) {
+        #home #toc li {
+          font-size: 4rem;
+          line-height: 1.3em;
+          margin-bottom: 3rem;
+          border-bottom: 1px solid red;
+          padding-bottom: 3rem; } }
       #home #toc li:hover {
         cursor: pointer;
         color: red;
@@ -237,6 +278,13 @@ table {
     #home #toc_close:hover {
       cursor: pointer;
       color: red; }
+    @media screen and (max-width: 768px) {
+      #home #toc_close {
+        font-size: 4rem; } }
+    @media screen and (max-width: 768px) {
+      #home #toc_close {
+        top: 6rem;
+        font-size: 6rem; } }
   #home #nav {
     display: none; }
     #home #nav .nav_element {
@@ -259,6 +307,13 @@ table {
         opacity: 0; }
         #home #nav #toc_show.off:hover {
           cursor: default; }
+      @media screen and (max-width: 768px) {
+        #home #nav #toc_show {
+          font-size: 4rem; } }
+      @media screen and (max-width: 768px) {
+        #home #nav #toc_show {
+          top: 6rem;
+          font-size: 6rem; } }
     #home #nav #arrows {
       opacity: 1; }
       #home #nav #arrows.off {
@@ -273,7 +328,17 @@ table {
       font-weight: bold;
       text-transform: uppercase;
       width: 6rem;
-      z-index: 500; }
+      z-index: 1000; }
+      @media screen and (max-width: 768px) {
+        #home #nav .arrow {
+          width: 10rem; }
+          #home #nav .arrow p {
+            font-size: 1.7rem; } }
+      @media screen and (max-width: 500px) {
+        #home #nav .arrow {
+          width: 15rem; }
+          #home #nav .arrow p {
+            font-size: 3rem; } }
       #home #nav .arrow img {
         width: 100%;
         margin-bottom: 1rem; }
@@ -286,8 +351,22 @@ table {
           cursor: default; }
       #home #nav .arrow#arrow_next {
         top: 8rem; }
+        @media screen and (max-width: 768px) {
+          #home #nav .arrow#arrow_next {
+            top: 10rem; } }
+        @media screen and (max-width: 500px) {
+          #home #nav .arrow#arrow_next {
+            top: 40%;
+            right: 2rem; } }
       #home #nav .arrow#arrow_prev {
         top: 16rem; }
+        @media screen and (max-width: 768px) {
+          #home #nav .arrow#arrow_prev {
+            top: 22rem; } }
+        @media screen and (max-width: 500px) {
+          #home #nav .arrow#arrow_prev {
+            top: 40%;
+            left: 2rem; } }
     #home #nav #percentage_insert {
       width: 8rem;
       font-size: 7rem;
@@ -305,7 +384,14 @@ table {
       bottom: 1rem;
       right: 3rem;
       color: black;
-      z-index: 1000; }
+      z-index: 100; }
+      @media screen and (max-width: 768px) {
+        #home #nav #percentage {
+          right: 4rem;
+          font-size: 4rem; } }
+      @media screen and (max-width: 500px) {
+        #home #nav #percentage {
+          display: none; } }
       #home #nav #percentage.off {
         opacity: 0; }
         #home #nav #percentage.off:hover {
@@ -335,6 +421,16 @@ table {
         opacity: 0; }
         #home #nav #current.off:hover {
           cursor: default; }
+      @media screen and (max-width: 768px) {
+        #home #nav #current {
+          font-size: 2.5rem;
+          line-height: 1.2em;
+          width: 25rem;
+          top: inherit;
+          bottom: 20%; } }
+      @media screen and (max-width: 500px) {
+        #home #nav #current {
+          display: none; } }
     #home #nav #nav_control {
       font-family: 'Proza Libre';
       text-transform: uppercase;
@@ -351,11 +447,26 @@ table {
       border-radius: 10px;
       -webkit-border-radius: 10px;
       transition: font-size ease 0.5s; }
+      @media screen and (max-width: 768px) {
+        #home #nav #nav_control {
+          font-size: 2.5rem; } }
+      @media screen and (max-width: 768px) {
+        #home #nav #nav_control {
+          top: inherit;
+          bottom: 10rem;
+          right: 5rem;
+          font-size: 4rem; } }
       #home #nav #nav_control.off {
         opacity: 0.5;
         font-size: 1rem; }
         #home #nav #nav_control.off:hover {
           cursor: default; }
+        @media screen and (max-width: 768px) {
+          #home #nav #nav_control.off {
+            font-size: 2rem; } }
+        @media screen and (max-width: 500px) {
+          #home #nav #nav_control.off {
+            font-size: 3.5rem; } }
         #home #nav #nav_control.off:hover {
           opacity: 1; }
       #home #nav #nav_control .nav_button:hover {
