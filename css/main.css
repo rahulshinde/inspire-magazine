@@ -463,10 +463,10 @@ table {
           cursor: default; }
         @media screen and (max-width: 768px) {
           #home #nav #nav_control.off {
-            font-size: 2rem; } }
+            font-size: 2.5rem; } }
         @media screen and (max-width: 500px) {
           #home #nav #nav_control.off {
-            font-size: 3.5rem; } }
+            font-size: 4rem; } }
         #home #nav #nav_control.off:hover {
           opacity: 1; }
       #home #nav #nav_control .nav_button:hover {
