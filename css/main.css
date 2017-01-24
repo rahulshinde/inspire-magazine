@@ -247,6 +247,7 @@ table {
         font-size: 4rem; } }
 
 #home {
+  overflow-x: hidden;
   background-color: black; }
   #home.fixed {
     position: fixed;
