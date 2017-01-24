@@ -5,7 +5,7 @@
 
 ####This website has been designed and published for entertainment/academic purposes only and does not endorse any of the content that it contains. All content has been sourced from existing material and can be found through references provided on each page.
 
-####This project consisted of excavating, reassembling, rebranding, and then re-presenting the written content of three issues of Al-Qaeda’s propagandic publication Inspire Magazine in a responsive website. Our rebrand of Inspire Magazine was the culmination of a number of theoretical points of entry which we will briefly survey here.
+####*This project consisted of excavating, reassembling, rebranding, and then re-presenting the written content of three issues of Al-Qaeda’s propagandic publication Inspire Magazine in a responsive website. Our rebrand of Inspire Magazine was the culmination of a number of theoretical points of entry which we will briefly survey here.*
 
 ####As the designer shapes the web experience of the consumer, he reifies the ideological relation between the consumer and a given social position. The designer necessarily does so from a subject-position outside of that of the consumer, and thus ceases to be a fully a consumer him/herself.  It is because of this potential ability to access this outside that we believe the designer has a distinct opportunity to problematize the medium of the web itself.
 
