@@ -1988,6 +1988,7 @@ table {
 #page14 #fullbackground {
   text-align: center;
   position: relative;
+  z-index: 10;
   width: 100%;
   margin: 0 auto 0 auto; }
   #page14 #fullbackground h1 {
@@ -2016,6 +2017,8 @@ table {
         font-size: 80rem;
         max-width: 76rem; } }
 #page14 #contentwrapper {
+  position: relative;
+  z-index: 100;
   width: 100%;
   text-align: center; }
   #page14 #contentwrapper #quote {
