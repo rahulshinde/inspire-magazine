@@ -58,7 +58,6 @@ $('.toc_toggle').on('click', Site.toggleToc);
 
 Site.tocNav = function() {
 
-  $('#loading').fadeToggle();
   $('.page_title').removeClass('selected');
   $(this).addClass('selected');
   $('#content_container').empty();
@@ -69,20 +68,23 @@ Site.tocNav = function() {
   $('#current_info1').append($(this).data('name'));
   $('#current_info2').empty();
   $('#current_info2').append($(this).data('issue'));
+  $('#pageNumber').empty();
+  $('#pageNumber').append($(this).data('page'));
   $('#current_info3').empty();
-  $('#current_info3').append($(this).data('link'));
+  $('#current_info3').append('<a target="_blank" href='+'"'+$(this).data('link')+'"'+'>Link</a>');
 
   $('#content_container').load(page + '.html', function(){
     $('#toc').fadeToggle(500);
     $('#loading').fadeToggle();
   });
 
+  $('body').toggleClass('fixed');
+
 }
 
 //Navigation arrow controls
 
 Site.next = function() {
-  $('#loading').fadeToggle();
 
   Site.arrayCount ++;
 
@@ -99,7 +101,7 @@ Site.next = function() {
   $('#current_info2').empty();
   $('#current_info2').append($('#toc_' + Site.pageCurrent).data('issue'));
   $('#current_info3').empty();
-  $('#current_info3').append($('#toc_' + Site.pageCurrent).data('link'));
+  $('#current_info3').append('<a target="_blank" href='+'"'+$('#toc_' + Site.pageCurrent).data('link')+'"'+'>Link</a>');
 
   $('#content_container').empty();
   $('#content_container').load(Site.pageCurrent + '.html', function(){
@@ -126,7 +128,7 @@ Site.prev = function() {
   $('#current_info2').empty();
   $('#current_info2').append($('#toc_' + Site.pageCurrent).data('issue'));
   $('#current_info3').empty();
-  $('#current_info3').append($('#toc_' + Site.pageCurrent).data('link'));
+  $('#current_info3').append('<a target="_blank" href='+'"'+$('#toc_' + Site.pageCurrent).data('link')+'"'+'>Link</a>');
   
   $('#content_container').empty();
   $('#content_container').load(Site.pageCurrent + '.html', function(){
@@ -145,6 +147,7 @@ Site.toggleNav = function(){
 
 Site.toggleToc = function(){
   $('#toc').fadeToggle(500);
+  $('body').toggleClass('fixed');
 }
 
 Site.percentage = function(){

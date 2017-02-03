@@ -1,0 +1,16 @@
+#INSPIRE MAGAZINE
+
+##[Vijay Masharani](http://vijaymasharani.com/) + [Rahul Subash Shinde](http://rahulshinde.com/)
+##[Expressions of Doubt](http://or-maybe.info)
+
+####*This website has been designed and published for entertainment/academic purposes only and does not endorse any of the content that it contains. All content has been sourced from existing material and can be found through references provided within the site itself.*
+
+####This project consisted of excavating, reassembling, rebranding, and then re-presenting the written content of three issues of Al-Qaeda’s propagandic publication Inspire Magazine in a responsive website. Our rebrand of Inspire Magazine was the culmination of a number of theoretical points of entry which we will briefly survey here.
+
+####As the designer shapes the web experience of the consumer, he reifies the ideological relation between the consumer and a given social position. The designer necessarily does so from a subject-position outside of that of the consumer, and thus ceases to be a fully a consumer him/herself.  It is because of this potential ability to access this outside that we believe the designer has a distinct opportunity to problematize the medium of the web itself.
+
+####In its current general form, the task of the graphic designer is to aesthetically validate neoliberal models of consumption and distribution. Typically, the consuming act is instigated by reframing a subjective aimless desire as an objective right or duty grounded in a specific object or experience. This reframing is facilitated by designers, who depict the product as a source of efficient absolution, sexual satisfaction, or transcendent enjoyment. In this case, the designer is regarded as a relatively nonpartisan individual who, if anything, is providing a public service insofar as he/she renders legible, through the regulation of affect, an often overwhelming quantity of competing option. This regulation of affect is manifested in the field of UX, which serves to contour emotion using tangible tools.
+
+####Thus, the notion that the designer functions in either a nonpartisan or altruistic manner could not be further from the truth. The designer is actually violent to the extent that he/she divorces both the subject and the product from their material conditions; potent desire is redirected into stultifying objects which are themselves absolved, via the sanctifying space of the web, of their dilapidated context—their impact on the bodies of the labor force, the environment, the social, etc. Consider, for instance, the role of the rebrand in Blackwater, in which the designers served as erasers of history, burying the narrative of the civilians killed in Nisour Square.
+
+####The Absolute Evil (in this case, embodied in the radical Islamist terrorist) has a unique position in society to the extent that its functioning can never be mistaken for innocent, altruistic, or nonpartisan. Thus, for a designer to align him/herself with the Absolute Evil is critically valuable insofar as the content is inarguably violent, thereby enabling the viewer to index all graphic design along an index of neoliberal violence.
