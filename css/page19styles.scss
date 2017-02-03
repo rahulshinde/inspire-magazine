@@ -1,0 +1,152 @@
+@import 'shared';
+
+#page19{
+  overflow-x: hidden;
+  .container{
+    width:100%;
+    padding:$containerpadding;
+    position:relative;
+  }
+
+  #osjbackwrapper{
+    width:100%;
+    @include media($tablet){
+      margin-top:30rem;
+    }
+    text-align:center;
+    margin-top:7rem;
+    #osjback{
+      display:inline-block;
+      h1{
+        @include media($tablet){
+          font-size:47rem;
+          line-height:.6em;
+        }
+        width:auto;
+        font-family:'league_gothicCnRg';
+        transform:scale(1,1.55);
+        font-size:18.5rem;
+        padding-bottom: 4rem;
+        color:000;
+        text-transform:uppercase;
+        span{
+          color:#fff;
+          text-shadow:0px 0px 1px #000;
+          -webkit-text-shadow:0px 0px 1px #000;
+
+        }
+      }
+    }
+  }
+
+  #osjsub{
+    margin-top:-2.77rem;
+    position:absolute;
+    @include media($tablet){
+      top:0;
+      left:0;
+    }
+    text-align:center;
+    width:100%;
+    h3{
+      @include media($tablet){
+        word-spacing:normal;
+        font-size:10rem;
+        line-height:5em;
+      }
+      font-family:sans-serif;
+      font-size:4rem;
+      text-align:center;
+      word-spacing:10rem;
+      text-transform:uppercase;
+      span{
+        @include media($tablet){
+
+          display:block;
+        }
+        color:#fff;
+        text-shadow:0px 0px 1px #000;
+        -webkit-text-shadow:0px 0px 1px #000;
+      }
+    }
+
+  }
+
+  #defwrapper{
+    width:100%;
+    display:relative;
+    text-align:center;
+    margin-top:3rem;
+    @include media($tablet){
+
+      margin-top:31rem;
+    }
+    .column{
+      @include media($tablet){
+        font-size:3rem;
+        width:100%;
+        display:block;
+        line-height:1.4em;
+        margin-bottom:2rem;
+      }
+      width:30%;
+      margin-right:1rem;
+      display:inline-block;
+      vertical-align:top;
+      text-align:left;
+      font-family:"Proza Libre";
+      span{
+        text-transform:uppercase;
+        color:$color-30grey;
+        font-weight:bold;
+      }
+      #last{
+        margin-right:0;
+      }
+    }
+  }
+
+  .overlayblock{
+    position:absolute;
+    @include media($tablet){
+      width:20rem;
+      font-size:2.5rem;
+      word-wrap:break-word;
+    }
+    width:11rem;
+    padding:1rem;
+    font-family:"Proza Libre";
+    background-color:white;
+    box-shadow:2px 2px 6px #000;
+    -webkit-box-shadow:2px 2px 6px #000;
+
+
+    h2{
+      color:$color-30grey;
+      text-transform:uppercase;
+      font-weight:bold;
+    }
+    h3{
+      font-style:italic;
+    }
+
+  }
+  #first{
+    top:6.5rem;
+    left:15.5rem;
+    transform: rotate(-11deg);
+    -webkit-transform: rotate(-11deg);
+    transform-origin:top left;
+  }
+  #second{
+    @include media($tablet){
+      top:100rem;
+    }
+    top:21rem;
+    left:42rem;
+    transform: rotate(14.5deg);
+    -webkit-transform: rotate(14.5deg);
+    transform-origin:top left;
+
+  }
+}

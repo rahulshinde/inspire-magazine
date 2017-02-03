@@ -1,0 +1,389 @@
+#home{
+  overflow-x: hidden;
+  &.fixed{
+    position: fixed;
+    overflow: hidden;
+  }
+  background-color: black;
+  #toc{
+    display: none;
+    position: fixed;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    z-index: 10000;
+    
+    ul{
+      padding-top: 10em;
+      padding-bottom: 4em;
+      margin-left: 10%;
+      width: 80%;
+      text-align: left;
+      -webkit-columns: 4;
+      -moz-columns: 4;
+      -o-columns: 4;
+      columns: 4;
+
+      -webkit-column-gap: 1rem;
+      -moz-column-gap: 1rem;
+      -o-column-gap: 1rem;
+      column-gap: 1rem;
+
+      @include media($tablet){
+        text-align: center;
+        padding-top: 13rem;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        -o-columns: 2;
+        columns: 2;
+
+        -webkit-column-gap: 4rem;
+        -moz-column-gap: 4rem;
+        -o-column-gap: 4rem;
+        column-gap: 4rem;
+      }
+
+      @include media($mobile){
+        padding-top: 16rem;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        -o-columns: 1;
+        columns: 1;
+      }
+    }
+
+    li{
+      font-family: 'Proza Libre', sans-serif;
+      font-size: 1rem;
+      line-height: 1.3em;
+      margin-bottom: 1rem;
+
+      @include media($tablet){
+        font-size: 2rem;
+        line-height: 1.3em;
+        margin-bottom: 2rem;
+      }
+
+      @include media($mobile){
+        font-size: 4rem;
+        line-height: 1.3em;
+        margin-bottom: 3rem;
+        border-bottom: 1px solid red;
+        padding-bottom: 3rem;
+      }
+
+
+      &:hover{
+        cursor:pointer;
+        color:red;
+        text-shadow: 0px 0px 20px red;
+        -webkit-text-shadow: 0px 0px 10px red;
+      }
+    }
+
+    .selected{
+      color: red;
+    }
+
+
+  }
+
+  #toc_close{
+
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+
+
+
+    font-family: 'Aref Ruqaa', serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+
+    text-shadow: 0px 0px 10px white;
+
+    &:hover{
+      cursor: pointer;
+      color:red;
+    }
+
+    @include media($tablet){
+      font-size: 4rem;
+    }
+
+    @include media($mobile){
+        top: 6rem;
+        font-size: 6rem;
+      }
+
+
+  }
+
+  #nav{
+    .nav_element{
+      z-index: 1000;  
+      transition: opacity ease 0.5s;
+      -webkit-transition: opacity ease 0.5s;
+    }
+
+    #toc_show{
+      position: fixed;
+      top: 5rem;
+      left: 5rem;
+
+
+
+      font-family: 'Aref Ruqaa', serif;
+      font-weight: bold;
+      font-size: 2rem;
+      color: red;
+
+      text-shadow: 0px 0px 10px red;
+
+      &:hover{
+          color:white;
+          cursor: pointer;
+        }
+
+      &.off{
+        &:hover{
+          cursor: default;
+        }
+        opacity: 0;
+      }
+
+      @include media($tablet){
+        font-size: 4rem;
+      }
+      @include media($mobile){
+        top: 6rem;
+        font-size: 6rem;
+      }
+
+    }
+
+    #arrows{
+      opacity: 1;
+      &.off{
+        &:hover{
+          cursor: default;
+        }
+        opacity: 0;
+      }
+    }
+
+    .arrow{
+      position: fixed;
+      right: 4.5rem;
+      text-align: center;
+      font-family: 'Aref Ruqaa';
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 6rem;
+      z-index: 1000;
+
+      @include media($tablet){
+        width: 10rem;
+        p{
+          font-size: 1.7rem;
+        }
+      }
+
+      @include media($mobile){
+        width: 15rem;
+        p{
+          font-size: 3rem;
+        }
+      }
+
+      img{
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      &:hover{
+        color: red;
+        cursor: pointer;
+
+      }
+
+      &.off{
+        &:hover{
+          cursor: default;
+        }
+        opacity: 0;
+      }
+
+      &#arrow_next{
+        top: 8rem;
+        @include media($tablet){
+          top: 10rem;
+        }
+        @include media($mobile){
+          top: 40%;
+          right: 2rem;
+        }
+      }
+
+      &#arrow_prev{
+        top: 16rem;
+        @include media($tablet){
+          top: 22rem;
+        }
+        @include media($mobile){
+          top: 40%;
+          left: 2rem;
+        }
+      }
+    }
+
+    #percentage_insert{
+      width: 8rem;
+      font-size: 7rem;
+      text-align: center;
+    }
+
+    #percentage{
+      text-align: justify;  
+      -moz-text-align-last: justify; /* Code for Firefox */
+      text-align-last: justify;
+      font-family: 'league_gothicCnRg', sans-serif;
+      font-size: 3rem;
+      width: 8rem;
+      text-transform: uppercase;
+      position: fixed;
+      bottom: 1rem;
+      right: 3rem;
+      color: black;
+      z-index: 100;
+
+      @include media($tablet){
+        right: 4rem;
+        font-size: 4rem;
+      }
+
+      @include media($mobile){
+        display: none;
+      }
+
+      &.off{
+        &:hover{
+          cursor: default;
+        }
+        opacity: 0;
+      }
+    }
+
+    #current{
+      position: fixed;
+      top: 50%;
+      left: 1rem;
+      width: 15rem;
+      padding: 0.5rem 1rem 1rem 1rem;
+      border: 1px solid black;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      background-color: rgba(255, 0, 0, 0.5);
+      color: white;
+
+      font-family: 'Aref Ruqaa', serif;
+      font-size: 1.5rem;
+      line-height: 1.2em;
+
+      a:link,
+      a:visited{
+        color:white;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      a:hover{
+        text-decoration: none;
+      }
+
+      &.off{
+        &:hover{
+          cursor: default;
+        }
+        opacity: 0;
+      }
+
+      @include media($tablet){
+        font-size: 2.5rem;
+        line-height: 1.2em;
+        width: 25rem;
+        top: inherit;
+        bottom: 20%;
+      }
+      @include media($mobile){
+        display: none;
+      }
+
+    }
+
+    display: none;
+    #nav_control{
+      font-family: 'Proza Libre';
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 2rem;
+      padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 10000;
+
+      color: black;
+      background: white;
+
+      border: 1px solid black;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+
+      transition: font-size ease 0.5s;
+
+      @include media($tablet){
+        font-size: 2.5rem;
+      }
+
+      @include media($mobile){
+        top: inherit;
+        bottom: 10rem;
+        right: 5rem;
+        font-size: 4rem;
+      }
+
+
+
+      &.off{
+        &:hover{
+          cursor: default;
+        }
+        opacity: 0.5;
+        font-size: 1rem;
+        @include media($tablet){
+          font-size: 2.5rem;
+        }
+        @include media($mobile){
+          font-size: 4rem;
+        }
+        &:hover{
+          opacity:1;
+        }
+      }
+
+
+
+      .nav_button{
+        &:hover{
+          cursor:pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,199 @@
+#page8{
+  width: 100%;
+  padding-top: 2rem;
+  padding-left: 0;
+  padding-right: 0;
+
+  header{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0 $container_padding;
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 4rem;
+    text-align: center;
+    
+    h1{
+      width: 17%;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      font-family: 'league_gothicregular', sans-serif;
+      font-size: 15rem;
+    }
+
+    img{
+      display: inline-block;
+      vertical-align: middle;
+      width: 30rem;
+    }
+  }
+
+
+  .text_two_column{
+    width: 100%;
+    position: relative;
+    float: left;
+    height: 100%;
+
+    &.under_or{
+    }
+  }
+
+  .text_column{
+    width: 30rem;
+    @include media($tablet){
+      width: 100%;
+      padding-left: $container_padding;
+      padding-right: $container_padding;
+      padding-bottom: 2rem;
+    }
+  }
+
+  .left{
+    padding-left: $container_padding;
+  }
+
+  .right{
+    position: absolute;
+    top: 0;
+    right: $container_padding;
+
+    @include media($tablet){
+      position: static;
+    }
+  }
+
+  p{
+    font-family: 'Proza Libre', sans-serif;
+    padding-bottom: 1.3rem;
+    line-height: 1.3em;
+
+    @include media($tablet){
+      font-size: 3rem;
+    }
+  }
+
+  .grey-background{
+    clear: both;
+    background-color: $grey;
+  }
+
+  .firing{
+    
+    &.backfiring{
+      h1{
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+
+        color: white;
+        text-shadow: 0px 0px 8px #000;
+      }
+    }
+
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 5rem 0; 
+    h1{
+      text-align: center;
+      font-family: 'league_gothiccondensed_italic', sans-serif;
+      font-size: 18rem;
+      text-transform: uppercase;
+
+      @include media($tablet){
+        font-size: 27rem;
+      }
+
+    }
+
+    img{
+      position: absolute;
+      width: 18rem;
+
+      @include media($tablet){
+        width: 28rem;
+      }
+    }
+
+    .drone1{
+      top: 1rem;
+      left:7rem;
+    }
+
+    .drone2{
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+
+      top: -2rem;
+      right: 10rem;
+    }
+
+    .drone3{
+      bottom: -1rem;
+      left: 17rem;
+    }
+  }
+
+  .or{
+    clear: left;
+    position: relative;
+    top: -12rem;
+    width: 10rem;
+    height: 7rem;
+    display: block;
+    margin: 0rem auto;
+    text-align: center;
+    @include media($tablet){
+      top: 0;
+      width: 50rem;
+      height: 40rem;
+    }
+    h1{
+      position: absolute;
+      top: 0;
+      font-family: 'Aref Ruqaa';
+      padding: 1rem 1rem 2rem 1rem;
+      font-size: 4rem;
+      border: 1px solid black;
+      background-color: white;
+      z-index: 10;
+
+        @include media($tablet){
+        padding: 1rem 1rem 10rem 1rem;
+        font-size: 30rem;
+      }
+    }
+  }
+
+  .bottom_wrapper{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    width: 100%;
+    background-color: $grey;
+    margin-top: -30rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    @include media($tablet){
+      margin-top: 6rem;
+    }
+
+    .left{
+      padding-left: $container_padding;
+    }
+
+    .right{
+      right: 2.77%;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+@import 'shared';
+
+#page11{
+  .container{
+    text-align:center;
+    width:100%;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    padding:$containerpadding;
+  }
+
+  #leftcolumn{
+    @include media($tablet){
+      display:block;
+      width:100%;
+      text-align:center;
+    }
+    display:inline-block;
+    width:48%;
+    margin-top:4rem;
+    #header{
+      @include media($tablet){
+        text-align:justify;
+        word-wrap: break-word;
+        font-size:13rem;
+      }
+      text-align:left;
+      font-family:"league_gothicregular";
+      font-size:5rem;
+      color:000;
+      span{
+        color:#fff;
+        text-shadow:0px 0px 2px #000;
+      }
+    }
+    #imagewrapper{
+      text-align:center;
+      margin-top:4rem;
+
+    }
+    img{
+      @include media($tablet){
+        width:90%;
+      }
+      display:inline-block;
+      width:65%;
+    }
+
+  }
+
+  #rightcolumn{
+    @include media($tablet){
+      display:block;
+      width:100%;
+    }
+    margin-top:4rem;
+    vertical-align: top;
+    display:inline-block;
+    width:48%;
+    .contentblock{
+      @include media($mobile){
+        text-align:center;
+        width:100%;
+        height:auto;
+        margin-top:2rem;
+      }
+      @include media($tablet){
+        text-align:center;
+        height:auto;
+        margin-top:2rem;
+      }
+      vertical-align: top;
+      display:inline-block;
+      width:29%;
+      height:16rem;
+      margin-right:1rem;
+      margin-top:1rem;
+      .last{
+        margin-right:0;
+      }
+
+      .bulbwrapper{
+
+        @include media($tablet){
+          background-size:35%;
+          height:15rem;
+        }
+        @include media($mobile){
+          background-size:22%;
+          height:35rem;
+        }
+        display:block;
+        height:32%;
+        background-image:url('../img/page11/lightbulb.png');
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-position:center;
+        width:100%;
+      }
+      .bulbcontent{
+        display:block;
+        margin-top:1em;
+
+        p{
+          @include media($breakpoint1){
+              font-size:0.85rem;
+              line-height: 1.2em;
+          }
+          @include media($tablet){
+              font-size:1.3rem;
+          }
+          @include media($mobile){
+            font-size:4rem;
+          }
+          text-align:justify;
+          font-family:"Proza Libre";
+          font-size:.7rem;
+          line-height:1.5em;
+        }
+
+      }
+    }
+
+  }
+}

@@ -1,0 +1,137 @@
+#page24{
+  .container{
+    width:100%;
+    padding:$containerpadding;
+    position:relative;
+  }
+
+  #titlewrapper{
+    position:relative;
+    font-family:"Aref Ruqaa";
+    font-size:5rem;
+    margin-bottom:2rem;
+    @include media($tablet){
+      width:100%;
+      font-size:12rem;
+      text-align:center;
+      margin-bottom:6rem;
+    }
+
+    h1{
+      display:inline-block;
+      color:#fff;
+      text-shadow:-2px 2px .5px #000;
+      -webkit-text-shadow:-2px 2px .5px #000;
+
+
+    }
+  }
+
+  .columnwrapper{
+    font-family:"Proza Libre";
+    width:100%;
+    margin-bottom:4rem;
+
+
+    .lcolumn{
+
+      display:inline-block;
+      vertical-align:top;
+      width:30%;
+      @include media($tablet){
+        width:100%;
+      }
+
+
+
+
+      h2{
+        @include media($tablet){
+          width:100%;
+          text-align:center;
+          font-size:3rem;
+          margin-top:4rem;
+          margin-bottom:4rem;
+        }
+        text-transform:uppercase;
+        font-weight:bold;
+        margin-bottom:1.5rem;
+      }
+      h3{
+
+      }
+      img{
+        @include media($tablet){
+          margin:4rem 0rem 5rem 0rem;
+
+        }
+        width:100%;
+        margin-bottom:1.8rem;
+
+      }
+    }
+    .rcolumn{
+      @include media($tablet){
+        width:100%;
+      }
+      display:inline-block;
+      vertical-align:top;
+      width:67%;
+      margin-left:1rem;
+      h2{
+        @include media($tablet){
+          text-align:center;
+          font-size:3rem;
+          margin:4rem 0 4rem 0;
+        }
+        text-transform:uppercase;
+        font-weight:bold;
+        margin-bottom:1.5rem;
+      }
+      p{
+        @include media($tablet){
+          columns:1;
+          font-size:2rem;
+        }
+        @include media($mobile){
+          font-size:3rem;
+        }
+        font-size:.8rem;
+        columns:2;
+        line-height:1.2em;
+      }
+      ul{
+        font-size:.8rem;
+      }
+
+      #blockquote{
+        font-family:'league_gothicitalic';
+        font-size:1.9rem;
+        line-height:1.1em;
+
+      }
+
+    }
+    #introborder{
+
+      border-right:1px solid black;
+      width:27%;
+      margin-right:3%;
+      @include media($tablet){
+        width:100%;
+        border-right:none;
+      }
+    }
+    #a_toc{
+      @include media($tablet){
+        width:100%;
+        font-size:3rem;
+      }
+      line-height:1.7em;
+    }
+    #popmap{
+      width:100%;
+    }
+  }
+
+}

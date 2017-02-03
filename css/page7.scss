@@ -1,0 +1,63 @@
+#page7{
+  padding-top: 2rem;
+  .section_title{
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding:0 $container_padding;
+    width: 100%;
+    
+    img{
+      margin-top: 2.4rem;
+      width: 50%;
+      @include media($tablet) {
+        width: 80%;
+        display: block;
+        margin: 2.4rem auto;
+      }
+    }
+
+    #ak{
+      position: absolute;
+      right: $container_padding;
+      top: 0;
+      width: 43%;
+      z-index: -100;
+      @include media($tablet) {
+        position: static;
+        width: 100%;
+      }
+    }
+
+    h1{
+      font-family: 'Aref Ruqaa', serif;
+      font-size: 7rem;
+      line-height: 1.2em;
+      .white_outline{
+        color: white;
+        text-shadow: 2px 2px 0px #000;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+      }
+
+      @include media($tablet) {
+        font-size: 9rem;
+        text-align: center;
+      }
+    }
+
+    p{
+      margin-top: 4rem;
+      width: 55%;
+      font-size: 1.3rem;
+      line-height: 1.3em;
+      font-family: 'Proza Libre';
+      @include media($tablet) {
+        width: 100%;
+        font-size: 4rem;
+        text-align: justify;
+      }
+    }
+  }
+}

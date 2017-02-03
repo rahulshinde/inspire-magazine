@@ -1,0 +1,170 @@
+@import 'shared';
+
+#page3{
+
+  .container{
+    width:100%;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    padding:$container_padding;
+  }
+
+  #headwrapper{
+    width:100%;
+    display:block;
+    text-align:center;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+
+		margin-bottom:2rem;
+    @include media($tablet){
+      margin-bottom: 4rem;
+    }
+    #head{
+      @include media($tablet){
+        display:block;
+        width:100%;
+      }
+			@include media($mobile){
+				font-size:9rem;
+			}
+      display: inline-block;
+      width: auto;
+      margin-right:7%;
+      font-family:'league_gothicregular';
+      text-transform:uppercase;
+      transform:scale(1.25,1);
+      font-size:7rem;
+    }
+
+    #head2{
+      @include media($tablet){
+        display:block;
+        width:100%;
+        text-align:center;
+				font-size:3rem;
+      }
+      text-align:left;
+      font-family:'Aref Ruqaa';
+      width:20%;
+      font-size:2rem;
+      display:inline-block;
+    }
+  }
+
+
+  .column{
+    @include media($tablet){
+      width:45%;
+    }
+    @include media($mobile){
+      display:block;
+      width:100%;
+      margin-left:0;
+			margin-bottom:4rem;
+    }
+    display:inline-block;
+    width:20%;
+    font-family:'Proza Libre';
+    vertical-align: top;
+    margin:0 0 0 6.2%;
+    .head{
+			@include media($tablet){
+				font-size:1rem;
+			}
+			@include media($tablet){
+				font-size:2.3rem;
+			}
+			@include media($mobile){
+				font-size:4rem;
+			}
+      font-size:1rem;
+      line-height:1.3em;
+      margin-bottom:.4rem;
+    }
+    .content{
+			@include media($breakpoint1){
+				font-size:1rem;
+			}
+			@include media($tablet){
+				font-size:1.8rem;
+				margin-bottom:2.2rem;
+
+			}
+			@include media($mobile){
+				font-size:3rem;
+			}
+      font-size:.75rem;
+      line-height:1.4em;
+    }
+  }
+
+  #firstcolumn{
+    margin-left:0;
+  }
+
+  #thirdcolumn{
+    @include media($tablet){
+      margin-left:0;
+    }
+  }
+
+  .rule{
+    @include media($tablet){
+      display:none;
+    }
+    border-bottom:2px solid $grey;
+    margin-top:3rem;
+    margin-bottom:3rem;
+    height:0;
+  }
+
+  #emoji-image{
+		@include media($mobile){
+			width:60%;
+		}
+    width:100%;
+    display:block;
+    // bottom:0;
+    // right:0;
+    margin-top:3rem;
+		margin:$page3imagemargin;
+  }
+
+  #bbomber-image{
+		@include media($mobile){
+			width:50%;
+		}
+		@include media($tablet){
+			width:66.6%;
+		}
+    width:50%;
+    display:block;
+    float:right;
+		margin:$page3imagemargin;
+
+  }
+
+  #death-image{
+    width:66.66%;
+    display:block;
+    float:right;
+		margin:$page3imagemargin;
+  }
+
+}
+
+.bold{
+  font-weight:bold;
+}
+
+.semibold{
+  font-weight:semibold;
+}
+.italic{
+  font-style:italic;
+}
+
+.grey{
+  color:$color-30grey;
+}

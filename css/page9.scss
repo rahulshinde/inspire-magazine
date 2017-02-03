@@ -1,0 +1,28 @@
+#page9{
+  h3{
+    padding-top: 2rem;
+    font-family: 'league_gothicitalic', sans-serif;
+    font-size: 6rem;
+
+    @include media($tablet){
+        font-size: 10rem;
+        text-align: center;
+    }
+  }
+  #break1{
+    padding-bottom: 4rem;
+    img{
+      display: inline-block;
+      width: 30%;
+    }
+    h1{
+      font-family: 'league_gothicregular', sans-serif;
+      font-size: 4rem;
+      width: 66%;
+      @include media($tablet){
+        font-size: 7rem;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+#page25{
+  .column_left{
+    display: inline-block;
+    vertical-align: middle;
+    width: 35%;
+    margin-right: 5%;
+    @include media($tablet){
+      width: 100%;
+      margin: 0;
+    }
+    h1{
+      padding-top: 0rem;
+      font-family: "Proza Libre", sans-serif;
+      font-weight: 800;
+      font-size: 4.5rem;
+
+      word-wrap: break-word;
+
+      text-align: justify;
+
+      text-transform: uppercase;
+      transform: scale(1,2);
+      -webkit-transform: scale(1,2);
+
+      @include media($tablet){
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+        font-size: 8rem;
+      }
+    }
+  }
+
+  .column_right{
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    @include media($tablet){
+      width: 100%;
+    }
+
+    h2{
+      font-family: "Aref Ruqaa", serif;
+      font-size: 1.5rem;
+      line-height: 1.2em;
+      margin-bottom: 4rem;
+      @include media($tablet){
+        font-size: 4rem;
+      }
+
+    }
+
+    .column_left{
+      width: 50%;
+      margin-right: 0;
+      @include media($breakpoint3){
+        width: 100%;
+      }
+      h3{
+        word-wrap: break-word;
+        text-align: justify;
+        font-family: "Proza Libre", sans-serif;
+        font-size: 1rem;
+        line-height: 1.3rem;
+        -moz-text-align-last: justify; /* Code for Firefox */
+        text-align-last: justify;
+
+        @include media($tablet){
+          font-size: 2rem;
+          line-height: 1.4em;
+        }
+      }
+    }
+
+    .column_right{
+      width: 50%;
+      @include media($breakpoint3){
+        width: 100%;
+      }
+      img{
+        display: block;
+        margin: 0rem auto 5rem auto;
+        width: 50%;
+
+        @include media($breakpoint3){
+          margin-top: 5rem;
+          margin-bottom: 8rem;
+        }
+      }
+
+      p{
+        font-family: "Proza Libre", sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+
+        text-align: center;
+        transform: rotate(10deg) scale(1,1.5);
+        -webkit-transform: rotate(10deg) scale(1,1.5);
+
+        @include media($tablet){
+          font-size: 2rem;
+          line-height: 1.4em;
+        }
+
+        @include media($breakpoint3){
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}

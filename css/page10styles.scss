@@ -1,0 +1,109 @@
+@import 'shared';
+
+.container{
+  width:100%;
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+  padding:$containerpadding;
+}
+
+#page10{
+  #columnwrapper{
+    width:100%;
+    #titlecolumn{
+      @include media($tablet){
+        width:100%;
+        margin:0;
+        text-align:center;
+      }
+      width:23%;
+      margin-right:2%;
+      display:inline-block;
+      vertical-align:top;
+      h1{
+        @include media($tablet){
+          font-size:15rem;
+        }
+        font-family:"league_gothicregular";
+        font-size:4rem;
+        #pushdown{
+          display:inline-block;
+          position:relative;
+          text-decoration:underline;
+          bottom:-5rem;
+        }
+      }
+      h2{
+        @include media($tablet){
+          width:100%;
+          font-size:4rem;
+          margin-top:8rem;
+
+        }
+        font-family:"Proza Libre";
+        margin-top:2rem;
+        width:50%;
+        text-align:center;
+      }
+      img{
+        @include media($tablet){
+          width:70%;
+        }
+        width:100%;
+        margin-top:3rem;
+        margin-bottom:3rem;
+      }
+
+    }
+    #bodycolumn{
+      @include media($tablet){
+        width:100%;
+      }
+      width:73%;
+      display:inline-block;
+      vertical-align:top;
+
+      p{
+        @include media($tablet){
+          -webkit-columns:1;
+          -moz-columns:1;
+          -o-columns:1;
+          columns:1;
+          font-size:2.5rem;
+        }
+        @include media($mobile){
+          font-size:3rem;
+        }
+        -webkit-columns:4;
+        -moz-columns:4;
+        -o-columns:4;
+        columns:4;
+        font-family:"Proza Libre";
+        font-size:.9rem;
+        line-height:1.4em;
+      }
+    }
+
+  }
+  #footer{
+
+    width:100%;
+    margin-top:2rem;
+    h1{
+      @include media($tablet){
+        font-size:5rem;
+      }
+      @include media($mobile){
+        font-size:6rem;
+      }
+      font-family:"Aref Ruqaa";
+      font-size:3rem;
+      span{
+        font-family:"league_gothicregular";
+        @include media($tablet){
+          font-size:7rem;
+        }
+      }
+    }
+  }
+}
