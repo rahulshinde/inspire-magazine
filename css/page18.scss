@@ -1,0 +1,55 @@
+#page18{
+  .title{
+    h2{
+      width: 20rem;
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: 18rem;
+      @include media($tablet){
+        width: 100%;
+      }
+    }
+
+    p{
+      margin-top: 13rem;
+      width: 30rem;
+      display: inline-block;
+      vertical-align: middle;
+      font-family: "Proza Libre", sans-serif;
+      font-style: italic;
+      @include media($tablet){
+        margin-top: 0;
+        width: 80%;
+        text-align: justify;
+        l-moz-text-align-last: justify; /* Code for Firefox */
+        text-align-last: justify;
+        font-size: 2.8rem;
+        line-height: 1.2em;
+      }
+    }
+  }
+
+  .break1{
+    margin: 4rem 0;
+    width: 100%;
+    h1{
+      font-family: 'league_gothicCnRg', sans-serif;
+      font-size: 11rem;
+      text-transform: uppercase;
+      text-align: justify;  
+      -moz-text-align-last: justify; /* Code for Firefox */
+      text-align-last: justify;
+      
+      color: red;
+      text-shadow: 0px 0px 20px white;
+
+      background: url('../img/page18/6.jpg');
+      background-size: 60%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    p{
+      font-family: 'Proza Libre'
+    }
+  }
+}

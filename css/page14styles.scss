@@ -1,0 +1,96 @@
+@import 'shared';
+
+#page14{
+  .container{
+    width:100%;
+    padding:$containerpadding;
+    overflow-x: hidden;
+  }
+
+  #fullbackground{
+    text-align:center;
+    position:relative;
+    z-index: 10;
+    width:100%;
+    margin:0 auto 0 auto;
+      h1{
+
+        @include media($tablet){
+          font-size:80rem;
+          max-width:76rem;
+        }
+
+        position:absolute;
+        left:0;
+        font-family:'league_gothicCnRg';
+        font-size:24rem;
+        line-height:.9em;
+        text-transform:uppercase;
+        word-wrap:break-word;
+        background: red; /* For browsers that do not support gradients */
+        background: -webkit-radial-gradient(#fff, $color-30grey); /* Safari 5.1 to 6.0 */
+        background: -o-radial-gradient(#fff, $color-30grey); /* For Opera 11.6 to 12.0 */
+        background: -moz-radial-gradient(#fff, $color-30grey); /* For Firefox 3.6 to 15 */
+        background: radial-gradient(#fff, $color-30grey); /* Standard syntax */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index:-1;
+      }
+    }
+
+
+  #contentwrapper{
+    position: relative;
+    z-index: 100;
+    width:100%;
+    text-align:center;
+
+
+    #quote{
+      @include media($tablet){
+        width:98%;
+        margin-top:1rem;
+        margin-bottom:4rem;
+      }
+      display:inline-block;
+      width:50%;
+      margin-top:4rem;
+      h2{
+        @include media($tablet){
+          font-size:6.5rem;
+        }
+        font-family:"Aref Ruqaa";
+        font-size:2rem;
+        line-height:1.3em;
+        .author{
+          display:block;
+          margin-left:10rem;
+        }
+      }
+    }
+      #content{
+        margin-top:4rem;
+        @include media($tablet){
+          width:100%;
+        }
+        display:inline-block;
+        text-align:justify;
+        width:77%;
+      p{
+        @include media($breakpoint1){
+          font-size:0.9rem;
+        }
+        @include media($tablet){
+          font-size:2.5rem;
+          columns:1;
+        }
+        font-family:"Proza Libre";
+        font-weight:600;
+        font-size:.7rem;
+        line-height:1.5em;
+        width:100%;
+        columns:3;
+      }
+    }
+  }
+}

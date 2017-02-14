@@ -1,0 +1,50 @@
+@import '../neat/neat';
+@import 'shared';
+@import 'reset';
+@import 'fonts/stylesheet';
+
+@import 'cover';
+@import 'nav';
+
+@import 'page3styles';
+@import 'page4';
+@import 'page5';
+@import 'page6styles';
+@import 'page7';
+@import 'page8';
+@import 'page9';
+@import 'page10styles';
+@import 'page11styles';
+@import 'page12';
+@import 'page13styles';
+@import 'page14styles';
+@import 'page16';
+@import 'page17';
+@import 'page18';
+@import 'page19styles';
+@import 'page20';
+@import 'page21styles';
+@import 'page24styles';
+@import 'page25';
+
+@import 'longreadstyles';
+
+
+body{
+  overflow-x: hidden;
+}
+
+.page_container,
+.pagecontainer,
+.longread{
+  background-color: white;
+  width: 100%;
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  padding-left: $container_padding;
+  padding-right: $container_padding;
+}
+
+#content_container{
+  display: none;
+}

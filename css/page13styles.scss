@@ -1,0 +1,188 @@
+#page13{
+  .container{
+    width:100%;
+    padding:$containerpadding;
+
+  }
+
+  .columnwrapper{
+    width:100%;
+    text-align:center;
+
+  }
+
+  .column{
+    @include media($tablet){
+      width:100%;
+    }
+    position:relative;
+    width:44%;
+    display:inline-block;
+    vertical-align:top;
+    padding: 0 7% 0 7%;
+    p{
+      @include media($tablet){
+        font-size:2.4rem;
+        line-height:1.2em;
+      }
+      text-align:left;
+      font-family:('Proza Libre');
+      font-weight:normal;
+      font-size:1rem;
+      line-height:1.4em;
+    }
+
+    h2{
+      @include media($tablet){
+        transform:none;
+        position:static;
+        font-size:7rem;
+        text-align:center;
+        margin-top:6rem;
+      }
+      font-family:('league_gothicCnRg');
+      width: 100%;
+      text-align: right;
+      font-size: 4rem;
+      transform: rotate(-90deg);
+      transform-origin: left;
+      position: absolute;
+      top: 31rem;
+      left:0rem;
+      text-transform:uppercase;
+    }
+
+    img{
+      @include media($tablet){
+        width:50%;
+        position:static;
+        margin:6rem 0rem 6rem 0rem;
+      }
+      position:absolute;
+      top:0;
+      right:0;
+      width:4rem;
+      height:auto;
+    }
+
+
+    }
+    .right{
+      h2{
+        @include media($tablet){
+          transform:none;
+          position:static;
+          text-align:center;
+        }
+        text-align:left;
+        transform: rotate(90deg);
+        transform-origin: right;
+
+      }
+
+      img{
+        left:0;
+      }
+    }
+    #shorter{
+      p{
+        @include media($tablet){
+          font-size:2.4rem;
+        }
+        font-size:1.3rem;
+        line-height:1.2em;
+      }
+    }
+
+  .blockquote{
+    margin: 4rem 0rem 4rem 0rem;
+    width:100%;
+    text-align:center;
+    position:relative;
+    &:before {
+        border-top: 1px solid black;
+        content:"";
+        margin: 0 auto; /* this centers the line to the full width specified */
+        position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+        top: 50%; left: 0; right: 0; bottom: 0;
+        width: 95%;
+        z-index: -1;
+    }
+    span{
+      @include media($tablet){
+        margin-top: 4rem;
+        font-size:3rem;
+        line-height:1.2em;
+        width:80%;
+      }
+      display:inline-block;
+      width:40%;
+      padding:0% 2% 0% 2%;
+      font-family:"Proza Libre";
+      font-weight:600;
+      font-size:1.5rem;
+      background-color:white;
+
+
+    }
+  }
+
+  .interstitial{
+    width:100%;
+    margin-top:4rem;
+    margin-bottom:4rem;
+    img{
+      width:100%;
+    }
+  }
+
+
+
+  #titlewrapper{
+    position:relative;
+    width:100%;
+    height:auto;
+    text-align:center;
+    margin-top:10rem;
+    margin-bottom:25rem;
+    h1{
+      position:static;
+      font-size:9rem;
+      transform:scale(1,4);
+      font-family:'Aref Ruqaa';
+      display:inline-block;
+      width:auto;
+      background-color: #000;
+      color: transparent;
+      text-shadow: 0px 1px 3px rgba(255,255,255,1);
+      -webkit-background-clip: text;
+         -moz-background-clip: text;
+              background-clip: text;
+
+      }
+      #quote1{
+        @include media($tablet){
+          position:absolute;
+          top:0;
+        }
+        display:block;
+        font-size:15rem;
+        position:fixed;
+        top:10rem;
+        left:-1rem;
+
+      }
+
+      #quote2{
+        @include media($tablet){
+          position:absolute;
+        }
+        display:block;
+        font-size:15rem;
+        position:fixed;
+        right:-1rem;
+        bottom:10rem;
+        transform:scale(1,-4);
+    }
+  }
+}

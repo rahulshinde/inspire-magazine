@@ -1,0 +1,162 @@
+#page17{
+  width: 100%;
+  padding-top: 5rem;
+  float: left;
+
+  header{
+    text-align: center;
+    .header_left{
+      display: inline-block;
+      vertical-align: middle;
+      width: 50%;
+
+      @include media($breakpoint3){
+        width: 100%;
+      }
+      h1{
+        font-family: 'Aref Ruqaa', serif;
+        font-weight: 700;
+        font-size: 5rem;
+
+        padding-bottom: 2rem;
+
+        @include media($breakpoint1){
+          font-size: 5.5rem;
+          padding-bottom: 3rem;
+        }
+
+        @include media($breakpoint3){
+          font-size: 10rem;
+        }
+      }
+      h2{
+        font-family: 'Proza Libre', sans-serif;
+        font-weight: 800;
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+
+        @include media($breakpoint1){
+          font-size: 2rem;
+        }
+        @include media($breakpoint3){
+          font-size: 3rem;
+        }
+      }
+      img{
+        width: 50%;
+        @include media($breakpoint3){
+          width: 80%;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    p{
+      text-align: left;
+      width: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      font-style: italic;
+      font-size: 1.2rem;
+
+      @include media($breakpoint1){
+        margin-left: 2%;
+        width: 48%;
+        font-size: 1.4rem;
+      }
+
+      @include media($breakpoint3){
+        margin: 0;
+        width: 100%;
+        font-size: 3rem;
+      }
+    }
+  }
+
+  p{
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+  }
+
+  section{
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    padding: 3rem 7rem;
+    
+    @include media($breakpoint3){
+        padding: 3rem 0;
+    }
+
+
+    p{
+      position: relative;
+      text-align: justify;
+      font-size: 1rem;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      -o-columns: 2;
+      columns: 2;
+      z-index: 100;
+
+      @include media($breakpoint1){
+        font-size: 1.4rem;
+      }
+
+      @include media($breakpoint3){
+        margin: 0;
+        width: 100%;
+        font-size: 3rem;
+
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        -o-columns: 1;
+        columns: 1;
+      }
+    }
+
+    img{
+      position: absolute;
+      width: 15rem;
+      z-index: 10;
+      display: none;
+
+      @include media($breakpoint3){
+        width: 50rem;
+      }
+    }
+
+    .obama.show{
+      display: block;
+    }
+
+    .obama_left{
+      bottom: 0;
+      left: 0;
+
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+    }
+
+    .obama_right{
+      top: -5rem;
+      right: 0;
+    }
+  }
+
+  img{
+    display: block;
+    width: 30rem;
+    margin: 0rem auto;
+    @include media($breakpoint3){
+      width: 80%;
+      margin-bottom: 2rem;
+    }
+  }
+}

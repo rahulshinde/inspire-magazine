@@ -1,0 +1,264 @@
+@import 'shared';
+
+#page21{
+  .container{
+    width:100%;
+    padding:$containerpadding;
+    position:relative;
+  }
+
+  #largetargetswrapper{
+
+    width:100%;
+    margin-top:12rem;
+
+    img{
+      @include media($tablet){
+        width:100%;
+        height:60rem;
+      }
+      width:100%;
+      height:auto;
+
+    }
+  }
+
+  #celebimagewrapper{
+    text-align:center;
+    width:100%;
+    z-index:-1;
+  }
+  .celebimage{
+    @include media($tablet){
+      position:static;
+      display:inline-block;
+      width:30%;
+      padding-bottom:25rem;
+      margin: 2rem 4rem 2rem 4rem;
+    }
+    width:10%;
+    display:inline-block;
+    padding-bottom:10rem;
+    background-repeat:none;
+    background-size:cover;
+    background-position:center;
+    position:absolute;
+  }
+
+  #buffet{
+    background-image:url('../img/page21/buffet.jpg');
+    transform:rotate(-10deg);
+    top:8rem;
+    left:4rem;
+    z-index:-1;
+
+  }
+  #adelson{
+    background-image:url('../img/page21/adelson.jpg');
+    transform:rotate(10deg);
+    top:11rem;
+    left:18rem;
+
+  }
+  #gates{
+    background-image:url('../img/page21/gates.jpg');
+    transform:rotate(-10deg);
+    top:7rem;
+    left:29rem;
+    z-index:-1;
+  }
+  #koch{
+    background-image:url('../img/page21/koch.jpg');
+    transform:rotate(10deg);
+    top:10rem;
+    left:40rem;
+
+  }
+  #ellison{
+    background-image:url('../img/page21/ellison.jpg');
+    transform:rotate(-10deg);
+    top:15rem;
+    left:50rem;
+    z-index:-1;
+
+  }
+
+  #bloomberg{
+    background-image:url('../img/page21/bloomberg.jpg');
+    transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
+    top:6rem;
+    left:66rem;
+
+  }
+  #captionwrapper{
+    @include media($tablet){
+      display:inline-block;
+      width:100%;
+      position:absolute;
+      top:94rem;
+    }
+
+    width:100%;
+    display:block;
+  }
+  .caption{
+    @include media($tablet){
+      font-size:2.3rem;
+      width:43%;
+      text-align:center;
+      margin-top:1rem;
+      background-color:white;
+      border: 1px solid black;
+      vertical-align:top;
+      margin-bottom:17rem;
+      margin-right:1rem;
+    }
+    font-family:"Proza Libre";
+    font-size:.7rem;
+    text-align:justify;
+    width:11.8rem;
+    word-wrap: break-word;
+    padding:1rem;
+    display:inline-block;
+    span{
+      text-transform:uppercase;
+      font-family:"ProzaLibre-Medium";
+
+
+    }
+  }
+
+  #buffetcap{
+
+  }
+
+  #adelsoncap{
+  }
+
+  #gatescap{
+  }
+
+  #kochcap{
+
+  }
+  #ellisoncap{
+
+  }
+
+  #bloombergcap{
+
+  }
+
+  .laser{
+    height:0;
+    width:100%;
+    border-bottom:2px solid red;
+    position:absolute;
+
+  }
+
+  .rule{
+    position:absolute;
+    height:0;
+    left:0;
+    width:300%;
+    border-bottom:1px solid black;
+    z-index:-1;
+  }
+
+  #ruleone{
+    @include media($tablet){
+      top:62rem;
+    }
+        top:28rem;
+  }
+
+  #ruletwo{
+    @include media($tablet){
+      top:81rem;
+    }
+        top:44rem;
+  }
+
+
+
+  #l-one{
+    @include media($tablet){
+      top:77rem;
+      left:-48rem;
+      transform:rotate(7deg);
+    }
+    top:3rem;
+    left: 10rem;
+    transform:rotate(-10deg);
+    -webkit-transform:rotate(-10deg);
+
+  }
+
+  #l-two{
+    @include media($tablet){
+      top:77rem;
+      left:55rem;
+      transform:rotate(168deg);
+    }
+    top:22rem;
+    left: 23rem;
+    transform:rotate(12deg);
+    -webkit-transform:rotate(12deg);
+
+
+  }
+
+  #l-three{
+    @include media($tablet){
+      top:107rem;
+      left:-48rem;
+      transform:rotate(7deg);
+    }
+    top:22.5rem;
+    left: -41rem;
+    transform:rotate(161deg);
+    -webkit-transform:rotate(161deg);
+
+  }
+
+  #l-four{
+    @include media($tablet){
+      top:107rem;
+      left:55rem;
+      transform:rotate(168deg);
+    }
+    top:40rem;
+    left: -20rem;
+    transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+
+  }
+
+  #l-five{
+    @include media($tablet){
+      top:137rem;
+      left:-48rem;
+      transform:rotate(7deg);
+    }
+    top:53rem;
+    left: 28rem;
+    transform:rotate(250deg);
+    -webkit-transform:rotate(250deg);
+
+  }
+
+  #l-six{
+    @include media($tablet){
+      top:137rem;
+      left:55rem;
+      transform:rotate(168deg);
+    }
+    top:-4rem;
+    left: 69rem;
+    transform:rotate(-17deg);
+    -webkit-transform:rotate(-17deg);
+  }
+
+}
