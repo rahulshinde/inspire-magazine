@@ -5,6 +5,17 @@ html {
   box-sizing: inherit; }
 
 /* VARIABLES */
+a:link,
+a:visited {
+  border: 1px solid red;
+  color: white;
+  background-color: red; }
+
+a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none; }
+
 /* SHARED CLASSES*/
 .bold {
   font-weight: bold; }
@@ -252,6 +263,56 @@ table {
   #home.fixed {
     position: fixed;
     overflow: hidden; }
+  #home .page_title {
+    background-size: auto 100%;
+    background-position: right;
+    background-repeat: no-repeat; }
+  #home #toc_page3 {
+    background-image: url(../img/page3/emoji.png); }
+  #home #toc_page4 {
+    background-image: url(../img/page4/4.png); }
+  #home #toc_page5 {
+    background-image: url(../img/page5/1.jpg); }
+  #home #toc_page6 {
+    background-image: url(../img/page6/sheikh.png); }
+  #home #toc_page7 {
+    background-image: url(../img/page7/1.png); }
+  #home #toc_page8 {
+    background-image: url(../img/page8/4.jpg); }
+  #home #toc_page9 {
+    background-image: url(../img/page9/10.jpg); }
+  #home #toc_page10 {
+    background-image: url(../img/page10/faces.png); }
+  #home #toc_page11 {
+    background-image: url(../img/page11/world.png); }
+  #home #toc_page12 {
+    background-image: url(../img/page12/1.jpg); }
+  #home #toc_page13 {
+    background-image: url(../img/page13/curry.jpg); }
+  #home #toc_page14 {
+    background-image: url(../img/page14/Twitter_bird_logo_2012.svg.png); }
+  #home #toc_page15 {
+    background-image: url(../img/blacks/baltimore2.jpeg); }
+  #home #toc_page16 {
+    background-image: url(../img/page16/3.jpg); }
+  #home #toc_page17 {
+    background-image: url(../img/page17/1.jpg); }
+  #home #toc_page18 {
+    background-image: url(../img/page18/2.jpg); }
+  #home #toc_page19 {
+    background-image: url(../img/insideamerica/bodypack.png); }
+  #home #toc_page20 {
+    background-image: url(../img/page20/33.jpg); }
+  #home #toc_page21 {
+    background-image: url(../img/page21/gates.jpg); }
+  #home #toc_page22 {
+    background-image: url(../img/insideamerica/oxygenboom.png); }
+  #home #toc_page23 {
+    background-image: url(../img/fielddata/city3.png); }
+  #home #toc_page24 {
+    background-image: url(../img/page24/charliemag.jpg); }
+  #home #toc_page25 {
+    background-image: url(../img/page25/1.jpg); }
   #home #toc {
     display: none;
     position: fixed;
@@ -273,10 +334,10 @@ table {
       -moz-columns: 4;
       -o-columns: 4;
       columns: 4;
-      -webkit-column-gap: 1rem;
-      -moz-column-gap: 1rem;
-      -o-column-gap: 1rem;
-      column-gap: 1rem; }
+      -webkit-column-gap: 2rem;
+      -moz-column-gap: 2rem;
+      -o-column-gap: 2rem;
+      column-gap: 2rem; }
       @media screen and (max-width: 768px) {
         #home #toc ul {
           text-align: center;
@@ -298,9 +359,9 @@ table {
           columns: 1; } }
     #home #toc li {
       font-family: 'Proza Libre', sans-serif;
-      font-size: 1rem;
+      font-size: 1.2rem;
       line-height: 1.3em;
-      margin-bottom: 1rem; }
+      margin-bottom: 2.5rem; }
       @media screen and (max-width: 768px) {
         #home #toc li {
           font-size: 2rem;
@@ -466,10 +527,13 @@ table {
       line-height: 1.2em; }
       #home #nav #current a:link,
       #home #nav #current a:visited {
+        border: 0px solid white;
         color: white;
+        background-color: rgba(255, 0, 0, 0);
         font-weight: bold;
         text-decoration: underline; }
       #home #nav #current a:hover {
+        background-color: rgba(255, 0, 0, 0);
         text-decoration: none; }
       #home #nav #current.off {
         opacity: 0; }
@@ -528,6 +592,17 @@ table {
         text-decoration: underline; }
 
 /* VARIABLES */
+a:link,
+a:visited {
+  border: 1px solid red;
+  color: white;
+  background-color: red; }
+
+a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none; }
+
 /* SHARED CLASSES*/
 .bold {
   font-weight: bold; }
@@ -925,6 +1000,17 @@ table {
             border: 1.5rem dotted red; } }
 
 /* VARIABLES */
+a:link,
+a:visited {
+  border: 1px solid red;
+  color: white;
+  background-color: red; }
+
+a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none; }
+
 /* SHARED CLASSES*/
 .bold {
   font-weight: bold; }
@@ -1405,6 +1491,17 @@ table {
         width: 100%; } }
 
 /* VARIABLES */
+a:link,
+a:visited {
+  border: 1px solid red;
+  color: white;
+  background-color: red; }
+
+a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none; }
+
 /* SHARED CLASSES*/
 .bold {
   font-weight: bold; }
@@ -1545,6 +1642,17 @@ table {
           font-size: 7rem; } }
 
 /* VARIABLES */
+a:link,
+a:visited {
+  border: 1px solid red;
+  color: white;
+  background-color: red; }
+
+a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none; }
+
 /* SHARED CLASSES*/
 .bold {
   font-weight: bold; }
@@ -1932,6 +2040,17 @@ table {
         position: absolute; } }
 
 /* VARIABLES */
+a:link,
+a:visited {
+  border: 1px solid red;
+  color: white;
+  background-color: red; }
+
+a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none; }
+
 /* SHARED CLASSES*/
 .bold {
   font-weight: bold; }
@@ -2275,6 +2394,17 @@ table {
     font-family: "Proza Libre"; }
 
 /* VARIABLES */
+a:link,
+a:visited {
+  border: 1px solid red;
+  color: white;
+  background-color: red; }
+
+a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none; }
+
 /* SHARED CLASSES*/
 .bold {
   font-weight: bold; }
@@ -2653,6 +2783,17 @@ table {
         width: 50rem; } }
 
 /* VARIABLES */
+a:link,
+a:visited {
+  border: 1px solid red;
+  color: white;
+  background-color: red; }
+
+a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none; }
+
 /* SHARED CLASSES*/
 .bold {
   font-weight: bold; }
