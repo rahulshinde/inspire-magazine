@@ -267,6 +267,12 @@ table {
     background-size: auto 100%;
     background-position: right;
     background-repeat: no-repeat; }
+    @media screen and (max-width: 768px) {
+      #home .page_title {
+        background-position: center; } }
+    @media screen and (max-width: 500px) {
+      #home .page_title {
+        background-size: auto 50%; } }
   #home #toc_page3 {
     background-image: url(../img/page3/emoji.png); }
   #home #toc_page4 {
@@ -366,7 +372,7 @@ table {
         #home #toc li {
           font-size: 2rem;
           line-height: 1.3em;
-          margin-bottom: 2rem; } }
+          margin-bottom: 4rem; } }
       @media screen and (max-width: 500px) {
         #home #toc li {
           font-size: 4rem;
