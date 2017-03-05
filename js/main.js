@@ -27,7 +27,6 @@ $('.toc_toggle').on('click', Site.toggleToc);
     'page4',
     'page5',
     'page6',
-    'page7',
     'page8',
     'page9',
     'page10',
