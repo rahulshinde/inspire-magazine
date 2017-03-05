@@ -13,7 +13,7 @@ a:visited {
 
 a:hover {
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   text-decoration: none; }
 
 /* SHARED CLASSES*/
@@ -425,7 +425,8 @@ table {
         color: white;
         cursor: pointer; }
       #home #nav #toc_show.off {
-        opacity: 0; }
+        opacity: 0;
+        z-index: -100; }
         #home #nav #toc_show.off:hover {
           cursor: default; }
       @media screen and (max-width: 768px) {
@@ -460,18 +461,34 @@ table {
           width: 15rem; }
           #home #nav .arrow p {
             font-size: 3rem; } }
-      #home #nav .arrow img {
+      #home #nav .arrow div {
         width: 100%;
-        margin-bottom: 1rem; }
+        height: 6rem;
+        background-size: 100% auto;
+        background-position: bottom;
+        background-repeat: no-repeat; }
+        @media screen and (max-width: 768px) {
+          #home #nav .arrow div {
+            height: 10rem; } }
+        @media screen and (max-width: 500px) {
+          #home #nav .arrow div {
+            height: 15rem; } }
       #home #nav .arrow:hover {
         color: red;
         cursor: pointer; }
+        #home #nav .arrow:hover#arrow_next div {
+          background-image: url(../img/nav/a1.5.png); }
+        #home #nav .arrow:hover#arrow_prev div {
+          background-image: url(../img/nav/a2.5.png); }
       #home #nav .arrow.off {
-        opacity: 0; }
+        opacity: 0;
+        z-index: -100; }
         #home #nav .arrow.off:hover {
           cursor: default; }
       #home #nav .arrow#arrow_next {
         top: 8rem; }
+        #home #nav .arrow#arrow_next div {
+          background-image: url(../img/nav/a1.png); }
         @media screen and (max-width: 768px) {
           #home #nav .arrow#arrow_next {
             top: 10rem; } }
@@ -481,6 +498,8 @@ table {
             right: 2rem; } }
       #home #nav .arrow#arrow_prev {
         top: 16rem; }
+        #home #nav .arrow#arrow_prev div {
+          background-image: url(../img/nav/a2.png); }
         @media screen and (max-width: 768px) {
           #home #nav .arrow#arrow_prev {
             top: 22rem; } }
@@ -514,7 +533,8 @@ table {
         #home #nav #percentage {
           display: none; } }
       #home #nav #percentage.off {
-        opacity: 0; }
+        opacity: 0;
+        z-index: -100; }
         #home #nav #percentage.off:hover {
           cursor: default; }
     #home #nav #current {
@@ -542,7 +562,8 @@ table {
         background-color: rgba(255, 0, 0, 0);
         text-decoration: none; }
       #home #nav #current.off {
-        opacity: 0; }
+        opacity: 0;
+        z-index: -100; }
         #home #nav #current.off:hover {
           cursor: default; }
       @media screen and (max-width: 768px) {
@@ -606,7 +627,7 @@ a:visited {
 
 a:hover {
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   text-decoration: none; }
 
 /* SHARED CLASSES*/
@@ -1014,7 +1035,7 @@ a:visited {
 
 a:hover {
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   text-decoration: none; }
 
 /* SHARED CLASSES*/
@@ -1505,7 +1526,7 @@ a:visited {
 
 a:hover {
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   text-decoration: none; }
 
 /* SHARED CLASSES*/
@@ -1656,7 +1677,7 @@ a:visited {
 
 a:hover {
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   text-decoration: none; }
 
 /* SHARED CLASSES*/
@@ -2059,7 +2080,7 @@ a:visited {
 
 a:hover {
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   text-decoration: none; }
 
 /* SHARED CLASSES*/
@@ -2413,7 +2434,7 @@ a:visited {
 
 a:hover {
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   text-decoration: none; }
 
 /* SHARED CLASSES*/
@@ -2802,7 +2823,7 @@ a:visited {
 
 a:hover {
   color: black;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   text-decoration: none; }
 
 /* SHARED CLASSES*/
