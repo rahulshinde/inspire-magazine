@@ -185,8 +185,8 @@ table {
           font-size: 4rem; } }
     #cover #p_wrap #p_line {
       top: 0.38rem;
-      left: 6%;
-      right: 6.5%;
+      left: 13%;
+      right: 4%;
       position: absolute;
       border-bottom: 1px dotted white; }
       @media screen and (max-width: 768px) {
@@ -228,6 +228,15 @@ table {
       @media screen and (max-width: 500px) {
         #cover #h3_container h3 {
           font-size: 8rem; } }
+  #cover .project_description {
+    display: block;
+    margin: 0rem auto 2rem auto;
+    padding-bottom: 2rem;
+    font-family: 'Proza Libre', sans-serif;
+    line-height: 1.2em;
+    color: #fff;
+    width: 70%;
+    border-bottom: 1px solid white; }
   #cover h4 {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
